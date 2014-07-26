@@ -8,6 +8,7 @@ nav#main-menu{
 	position: fixed;
 	width: 100%;
 	margin-top:-85px;
+	z-index: 10000;
 }
 nav#main-menu ul{
 	list-style: none;
@@ -42,10 +43,13 @@ nav#main-menu ul li#logo-nav{
 }
 
 #main-container{
-	margin-top: 85px;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin: 85px 5% 20px 5%;
 	background-color: #fff;
+}
+#main-container header{
+	background-color: #005dc8;
+	background-image: url("../images/bg.png");
+	color:#fff;
 }
 #main-container header h2{
 	font-size: 32px;
@@ -63,6 +67,19 @@ nav#main-menu ul li#logo-nav{
 
 #main-container section{
 	padding: 20px;
+}
+
+#main-container section article.service{
+	display: inline-block;
+	max-width: 33%;
+  vertical-align: top;
+}
+#main-container section article.service h2{
+	text-align: center;
+}
+#main-container section article.service p{
+	text-align: justify;
+	padding: 5px 10px;
 }
 footer{
 	background-color: #fff;
