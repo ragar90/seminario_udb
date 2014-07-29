@@ -1,0 +1,141 @@
+body{
+	background-color: #003e85;
+	margin:0;
+	padding: 0;
+}
+nav#main-menu{
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 10000;
+}
+nav#main-menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav#main-menu ul li{
+	margin-bottom: 0px;
+	display:  inline-block;
+	vertical-align: top;
+	padding: 25px 30px 19px;
+	font-size: 20px;
+	min-height: 25px;
+}
+
+nav#main-menu ul li:hover{
+	background-color: #eeeeee
+}
+
+nav#main-menu ul li a{
+	color:#025b87;
+	text-decoration: none
+}
+nav#main-menu ul li a:hover{
+	color:#0193dc;
+}
+nav#main-menu ul li#logo-nav{
+	max-height: 58px;
+	max-width: 280px;
+	padding: 5px 30px;
+}
+#logo-nav img{
+	width: 100%;
+}
+.content{
+	background-color: #fff;
+	margin-top: 10%;
+  padding-top: 5%;
+}
+.content header{
+	margin-bottom: 
+}
+.content header figure{
+	max-width:1020px;
+}
+.content header figure img{
+	width: 100%;
+}
+.content article{
+	padding-right: 50px;
+	text-align: justify;
+}
+.container aside{
+	margin-left: 4%;
+  margin-top: 200px;
+  position: fixed;
+}
+
+.container aside ul li{
+	padding: 20px;
+}
+.container aside a{
+	color:#181818;
+	text-decoration: none;
+	font-size:35px;
+	font-family: "Georgia","Times New Roman",serif;
+}
+.container aside a:hover{
+	color:#4d4d4d;
+}
+/* #Media Queries
+================================================== */
+ 
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	.container aside a{
+		font-size: 30px
+	}
+}
+ 
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container aside a{
+		font-size: 30px	
+	}
+}
+ 
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.container aside a{
+		font-size: 30px
+	}
+}
+ 
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container aside{
+		display: none;
+	}
+	.content header, .content section{
+		padding: 5px 10px;
+	}
+	.content{
+		margin-top: 15%;
+	}
+	.content article{
+		padding: 0;
+	}
+	.container .columns, .container .column {
+    margin-top: 10%;
+	}
+}
+ 
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	.container aside{
+		display: none;
+	}
+	.content{
+		margin-top: 15%;
+	}
+	.content header, .content section{
+		padding: 5px 10px;
+	}
+	.content article{
+		padding: 0;
+	}
+	.container .columns, .container .column {
+    margin-top: 10%;
+	}
+}
