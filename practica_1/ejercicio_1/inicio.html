@@ -1,49 +1,249 @@
-<!DOCTYPE>
+<!doctype html>
 <html>
-<head>
-	<title>Gestion Humana</title>
-	<meta charset = "utf-8">
-	<link rel="stylesheet" type="text/css" href="css/gh_style.css">
-</head>
-<body>
-	<nav id = "main-menu">
-		<ul>
-			<li id = "logo-nav"><a href="inicio.html"><img src="images/logo.jpg"></a></li>
-			<li><a href="inicio.html">Inicio</a></li>
-			<li><a href="servicios.html">Servicios</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
-		</ul>
-	</nav>
-	<div id = "main-container">
-		<header>
-			<h2>LA BASE DE LA INTELIGENCIA SOCIAL, ES EL DIÁLOGO ENTRE LAS PERSONAS</h2>
-			<figure><img src="images/team.jpg"></figure>	
-		</header>
-		<section>
-			<article id = "who">
-				<h2>Quienes Somos</h2>
-				<p>Somos una empresa dedicada al desarrollo de personas. Apoyamos y generamos procesos diversos para facultarlos en su trabajo, en su familia y en su vida de forma general</p>
-				<details>
-						<sumary>
-							<p>A través de nuestros servicios de consultoría, asesoría, capacitación, coaching, consejería y búsqueda de talentos apoyamos a las personas y organizaciones para ser efectivas</p>
+	<head>
+		<title>Gestion Humana</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="libs/jquery-mobile/jquery.mobile-1.4.3.css" />
+		<link rel="stylesheet" href="libs/jquery-mobile/jquery.mobile.external-png-1.4.3.css" />
+		<link rel="stylesheet" href="libs/jquery-mobile/jquery.mobile.theme-1.4.3.css" />
+		<link rel="stylesheet" href="css/gh_style.css" />
+		<script src="libs/jquery.min.js"></script>
+		<script src="libs/jquery-mobile/jquery.mobile-1.4.3.js"></script>
+	</head>
+	<body>
 
-							<p>Nuestro enfoque se concentra en la persona, pues partimos de la premisa que las empresas son de éxito cuando tienen en todos sus niveles organizacionales personal exitoso. Cuando la persona desarrolla una visión de éxito se refleja en todas sus área y facetas de su vida</p>
-							<p>Todos nuestros programas de mejora y desarrollo organizacional se ejecutan bajo el marco de lo humano, con el principio de lo que cada quién es, de lo que cada quién sabe y debe hacer.</p>
-						</sumary>
-				</details>
-			</article>
-			<article id = "mission">
-				<h2>Misión</h2>
-				<p>Desarrollamos y facultamos a las personas en el ambiente empresarial enfocada en la gestión de recursos humanos y en el apoyo personal, realizando nuestros servicios de consultoría, capacitación, reclutamiento y selección, coaching y consejería personal.</p>
-			</article>
-			<article id = "vission">
-				<h2>Visión</h2>
-				<p>Ser una empresa que impulsa procesos de desarrollo personal y organizacional, reconocida por nuestra capacidad, innovación, responsabilidad, eficiencia y servicio orientado a facultar a las personas en el desarrollo de su talento y despertar inquietudes para que generen sus procesos de autodesarrollo personal</p>
-			</article>
-		</section>
-	</div>
-	<footer>
-		Copyrigth &copy; 2014 - Gestion Humana S.A de C.V
-	</footer>
+	<section id = "inicio" data-role="page">
+		<header class = "jqm-header" data-role="header" data-theme="a">
+			<h1>
+				<img src="images/logo.jpg">
+			</h1>
+			<a class="ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-theme="b" href="#leftpanel" data-role="button" role="button">Menu</a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<h1>Quienes Somos</h1>
+			<p>Somos una empresa dedicada al desarrollo de personas. Apoyamos y generamos procesos diversos para facultarlos en su trabajo, en su familia y en su vida de forma general</p>
+			<p>A través de nuestros servicios de consultoría, asesoría, capacitación, coaching, consejería y búsqueda de talentos apoyamos a las personas y organizaciones para ser efectivas.</p>
+			<p>Nuestro enfoque se concentra en la persona, pues partimos de la premisa que las empresas son de éxito cuando tienen en todos sus niveles organizacionales personal exitoso. Cuando la persona desarrolla una visión de éxito se refleja en todas sus área y facetas de su vida.</p>
+			<p>Todos nuestros programas de mejora y desarrollo organizacional se ejecutan bajo el marco de lo humano, con el principio de lo que cada quién es, de lo que cada quién sabe y debe hacer.</p>
+			<div data-role="collapsible" data-inset="true">
+			    <h4>Misión</h4>
+			    <p>Desarrollamos y facultamos a las personas en el ambiente empresarial enfocada en la gestión de recursos humanos y en el apoyo personal, realizando nuestros servicios de consultoría, capacitación, reclutamiento y selección, coaching y consejería personal.</p>
+			</div>
+			<div data-role="collapsible" data-inset="true">
+			    <h4>Visión</h4>
+			    <p>Ser una empresa que impulsa procesos de desarrollo personal y organizacional, reconocida por nuestra capacidad, innovación, responsabilidad, eficiencia y servicio orientado a facultar a las personas en el desarrollo de su talento y despertar inquietudes para que generen sus procesos de autodesarrollo personal</p>
+			</div>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h4>Page footer</h4>
+		</footer><!-- /footer -->
+		<div data-role="panel" id="leftpanel" data-position="left" data-display="reveal" data-theme="a">
+			<ul data-role="listview">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#contactus">Contactenos</a></li>
+			</ul>
+		</div><!-- /leftpanel1 -->
+	</section>
+
+	<section id = "servicios" data-role = "page">
+		<header class = "jqm-header" data-role="header" data-theme="a">
+			<h1>
+				<img src="images/logo.jpg">
+			</h1>
+			<a class="jqm-navmenu-link ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-theme="b" href="#leftpanel" data-role="button" role="button">Menu</a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<h1>Nuestros Servicios</h1>
+			<ul data-role="listview" data-theme="b" data-inset="true">
+			    <li>
+			    	<a href="#service1">
+			        <img src="images/HR.jpg">
+					    <h2>Asesoría de gestion de recursos humanos</h2>
+			  		</a>
+			    </li>
+			    <li>
+			    	<a href="#service2">
+			        <img src="images/events.jpg">
+					    <h2>Organizacion y desarrollo de eventos de capacitación</h2>
+			  		</a>
+			    </li>
+			    <li>
+			    	<a href="#service3">
+			        <img src="images/team.jpg">
+					    <h2>Reclutamiento y selección de personal</h2>
+			  		</a>
+			    </li>
+			    <li>
+			    	<a href="#service4">
+			        <img src="images/coach.jpg">
+					    <h2>Coaching y concsejería terapeutica</h2>
+			  		</a>
+			    </li>
+			</ul>
+		</article>
+		<footer data-role="footer"></footer>
+		<div data-role="panel" id="leftpanel" data-position="left" data-display="reveal" data-theme="a">
+			<ul data-role="listview">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#contactus">Contactenos</a></li>
+			</ul>
+		</div><!-- /leftpanel1 -->
+	</section>
+
+	<section id = "contactus"  data-role = "page">
+		<header class = "jqm-header" data-role="header" data-theme="a">
+			<h1>
+				<img src="images/logo.jpg">
+			</h1>
+			<a class="jqm-navmenu-link ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-theme="b" href="#leftpanel" data-role="button" role="button">Menu</a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<h1>Contactenos</h1>
+			<form data-parsley-validate method="post" data-ajax="false">
+        Name: <input type="text" id="naam" name="naam" value="" placeholder="Name" required/><br>
+        E-mail: <input type="email" id="mail" name="mail" value="" placeholder="E-mail" required/><br>
+        Phone Number: <input type="tel" id="telefoon" name="telefoon" value="" placeholder="Phone"/><br>
+        Subject: <input type="text" id="onderwerp" name="onderwerp" value="" placeholder="Subject" required/><br>
+        Message:<br>
+        <textarea style="height:100px;" id="bericht" name="bericht" placeholder="Enter your message here..." required></textarea> <br />
+        <input type="submit" value="Send" name="submit" class="btn">
+       </form>
+		</article>
+		<footer data-role="footer"></footer>
+		<div data-role="panel" id="leftpanel" data-position="left" data-display="reveal" data-theme="a">
+			<ul data-role="listview">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#contactus">Contactenos</a></li>
+			</ul>
+		</div><!-- /leftpanel1 -->
+	</section>
+
+	<section id = "service1" data-role="page">
+		<header class = "jqm-header" data-role="header" data-theme="a">
+			<h1>
+				<img src="images/logo.jpg">
+			</h1>
+			<a class="ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-theme="b" href="#leftpanel" data-role="button" role="button">Menu</a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<h1 class = "content-title">Asesoría de gestion de recursos humanos</h1>
+			<div class = "image-center">
+				<img src="images/HR2.jpg">
+			</div>
+			<p>Estudios de clima laboral y su seguimiento para establecer impacto en la organización.</p>
+    	<p>Auditoria de la Gestión de Recursos Humanos</p>
+    	<p>Manuales de Organización, Manual de perfiles de puestos (bajo el sistema de competencias), Manual de políticas y procedimientos.</p>
+    	<p>Detección de Necesidades de Capacitación, elaboración y administración del plan de capacitación.</p>
+    	<p>Implantación de cultura de valores, servicio al cliente, trabajo en equipo, Liderazgo, etc.</p>
+    	<p>Sistemas de evaluación del desempeño y rendimiento</p>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h4>Page footer</h4>
+		</footer><!-- /footer -->
+		<div data-role="panel" id="leftpanel" data-position="left" data-display="reveal" data-theme="a">
+			<ul data-role="listview">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#contactus">Contactenos</a></li>
+			</ul>
+		</div><!-- /leftpanel1 -->
+	</section>
+
+	<section id = "service2" data-role="page">
+		<header class = "jqm-header" data-role="header" data-theme="a">
+			<h1>
+				<img src="images/logo.jpg">
+			</h1>
+			<a class="ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-theme="b" href="#leftpanel" data-role="button" role="button">Menu</a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<h1 class = "content-title">Organización y desarrollo de eventos de capacitación</h1>
+			<div class = "image-center">
+				<img src="images/events2.jpg">
+			</div>
+			<p>Diseñamos los eventos de formación y entrenamiento a la medida de sus necesidades
+    Integramos un grupo de profesionales expertos en sus áreas.</p>
+    	<p>Ofrecemos cuatro programas de trabajo acompañan nuestra excelencia:</p>
+    		<ul>
+    			<li><b>PROGRAMA PARA EL DESARROLLO DE LÍDERES.</b> Tres ejes temáticos y más de 20 eventos de formación</li>
+    			<li><b>PROGRAMA PARA EL DESARROLLO HUMANOS.</b> Se desarrolla bajo dos ejes. Uno enfocado a la persona y el segundo hacia el desarrollo de cultura organizacional</li>
+    			<li><b>PROGRAMA PARA EL FORTALECIMIENTO DE LA GESTIÓN DE RECURSOS HUMANOS.</b>Es un diplomado completo y práctico de formación de Recursos Humanos, con 14 temas de trabajo y desarrollo de competencias.</li>
+    			<li><b>PROGRAMA DE FORMACIÓN DE FORMADORES.</b>El presente programa tiene  96 horas de duración, desarrollados a través de 4 módulos de 24 horas cada uno.</li>
+    		</ul>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h4>Page footer</h4>
+		</footer><!-- /footer -->
+		<div data-role="panel" id="leftpanel" data-position="left" data-display="reveal" data-theme="a">
+			<ul data-role="listview">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#contactus">Contactenos</a></li>
+			</ul>
+		</div><!-- /leftpanel1 -->
+	</section>
+
+	<section id = "service3" data-role="page">
+		<header class = "jqm-header" data-role="header" data-theme="a">
+			<h1>
+				<img src="images/logo.jpg">
+			</h1>
+			<a class="ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-theme="b" href="#leftpanel" data-role="button" role="button">Menu</a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<h1 class = "content-title">Reclutamiento y selección de personal</h1>
+			<div class = "image-center">
+				<img src="images/team2.jpg">
+			</div>
+			<ul>
+				<li><b>RECLUTAMIENTO Y SELECCIÓN A TODO NIVEL.</b>Contamos con una amplia base de candidatos y nuestro proceso valora de forma técnica y científica las competencias que el perfil del puesto requiere. La presentación de nuestra terna surge del desarrollo de entrevistas, evaluación y exploración técnica y psicológica que analiza los diversos atributos de los candidatos, investigación de su record laboral y social y la entrega de un informe amplio de todas las condiciones del candidato comparado con el perfil del puesto.</li>
+				<li><b>EVALUACIÓN PSICOLÓGICA.</b>Contamos con una amplia batería de pruebas psicométricas en papel y mecanizadas que nos permiten evaluar diversos atributos de las personas, tanto de carácter cognoscitivos, emocionales y de personalidad. Evaluamos inteligencia, Habilidades, Carácter, Personalidad, Liderazgo entre otras.</li>
+			</ul>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h4>Page footer</h4>
+		</footer><!-- /footer -->
+		<div data-role="panel" id="leftpanel" data-position="left" data-display="reveal" data-theme="a">
+			<ul data-role="listview">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#contactus">Contactenos</a></li>
+			</ul>
+		</div><!-- /leftpanel1 -->
+	</section>
+
+	<section id = "service4" data-role="page">
+		<header class = "jqm-header" data-role="header" data-theme="a">
+			<h1>
+				<img src="images/logo.jpg">
+			</h1>
+			<a class="ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-theme="b" href="#leftpanel" data-role="button" role="button">Menu</a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<h1 class = "content-title">Coaching y concsejería terapeutica</h1>
+			<div class = "image-center">
+				<img src="images/coach2.jpg">
+			</div>
+			<p>Cada vez mas se  ve la importancia y necesidad de apoyar a los ejecutivos con procesos de reflexión personal; de tal forma que les permitan generar reflexión acerca de su desempeño y desarrollar sus competencias de líderes. El Coaching es una excelente herramienta para el desarrollar de ejecutivos.</p>
+			<p>Nuestra experiencia en procesos de desarrollo humano y prácticas de consejería terapéutica con personas de diversas condiciones nos permiten acompañarlos en esta área.
+    Contamos con amplia experiencia en el campo de la salud mental.</p>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h4>Page footer</h4>
+		</footer><!-- /footer -->
+		<div data-role="panel" id="leftpanel" data-position="left" data-display="reveal" data-theme="a">
+			<ul data-role="listview">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#contactus">Contactenos</a></li>
+			</ul>
+		</div><!-- /leftpanel1 -->
+	</section>
+
 </body>
 </html>
